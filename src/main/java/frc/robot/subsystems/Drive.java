@@ -96,6 +96,9 @@ public class Drive extends SubsystemBase {
 
   /** Creates a new Drive subsystem. */
   public Drive() {  
+   m_leftMotor.setInverted(true);
+      m_rightMotor.setInverted(true);
+
     m_left2Motor.setControl(new Follower(DriveConstants.kLeftMotor1Port, false));
     m_right2Motor.setControl(new Follower(DriveConstants.kRightMotor1Port, false));
 
